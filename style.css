@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: darkgrey;
+}
+
+header {
+    background-color: darkgrey;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.promo-banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.promo-banner h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.promo-banner p {
+    font-size: 20px;
+    color: #000;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f7cccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.card a {
+    text-decoration: none;
+    color: #5caa5c;
+    font-weight: bold;
+}
+
+footer {
+    background-color:darkgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer img {
+    height: 40px;
+}
+
+footer p {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .promo-banner h2 {
+        font-size: 28px;
+    }
+
+    .promo-banner p {
+        font-size: 16px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+}
